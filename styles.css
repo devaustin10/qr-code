@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set root variables here */
+:root {
+    --primary-font-color: #1F314F;
+    --secondary-font-color: #68778D;
+    --bg-color: #D5E1EF;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 499px; /* Set a height for the container */
+    width: 320px;
+
+    padding: 16px 16px 40px 16px; /* The values are top, right, bottom, and left in that order. */
+
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+.qr-img-container {
+    padding-bottom: 24px;
+}
+
+#qr-square {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    border-radius: 16px;
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto; /* Grow, shrink, and initial size */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    flex: 1 1 auto; /* Grow, shrink, and initial size */
+}
+
+h3, p {
+    text-align: center;
+    flex: 1 1 auto; /* Grow, shrink, and initial size */
+    font-family: 'Outfit', sans-serif;
+
+}
+
+h3 {
+    color: var(--primary-font-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+p {
+    color: var(--secondary-font-color);
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
